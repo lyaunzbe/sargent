@@ -1,0 +1,33 @@
+body,html{
+  margin:0;
+  background-image:url('../img/wavecut.png');
+  height:100%;
+}
+
+#splash{
+  margin:0 auto;
+  width:600px;
+  text-align:center;
+  margin-top:200px;
+  padding-bottom:20px;
+}
+
+#splash:hover{
+  background-color:silver;
+  border:5px grey solid;
+  opacity:0.6;
+  border-radius:10px;
+  -webkit-transition:all .2s ease 0.2s;
+  letter-spacing:-5px;
+}
+
+.github_auth{
+  color:rgb(51, 51, 50);
+  font-family:'Adelle';
+  font-style:italic;
+  font-weight:700;
+  text-decoration:none;
+  font-size:150px;
+  
+}
+
