@@ -1,31 +1,6 @@
 var _ = require('underscore')._
 
-window.utils = {
 
-    // Asynchronously load templates located in separate .html files
-    loadTemplate: function(views, callback) {
-
-        var deferreds = [];
-
-        $.each(views, function(view) {
-            if (window[view]) {
-                console.log(view);
-                deferreds.push($.ajax(
-                  {url: 'tpl/' + view + '.html',
-                   success: function(data) {
-                      window[view].template = _.template(data);
-                      console.log(window[view].template());
-                   }}));
-                   console.log(deferreds);
-            } else {
-                alert(view + " not found");
-            }
-        });
-       _.when(deferreds).done(callback);
-      
-    }
-
-}
 
 window.TemplateManager = {
   templates: {},

@@ -40,7 +40,7 @@ app.get('/partials/:name', routes.partials);
 
 // JSON API
 
-app.get('/api/name', api.name);
+app.get('/api/user', api.user);
 app.get('/api/clientID', api.client_id);
 app.get('/api/auth', api.auth)
 
